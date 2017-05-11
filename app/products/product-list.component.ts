@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { IProduct } from "./product";
 
 @Component({
-	selector: 'pm-products',
+	selector: "pm-products",
     moduleId: module.id,
 	templateUrl: "product-list.component.html",
     styleUrls: ["product-list.component.css"]
@@ -54,4 +54,8 @@ export class ProductListComponent implements OnInit{
 	toggleImage(): void {
 		this.showImage = !this.showImage;
 	}
+
+    onRatingClicked(message: string): void {
+        this.pageTitle = "Product List: " + message;
+    }
 }
