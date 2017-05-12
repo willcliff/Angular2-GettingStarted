@@ -17,12 +17,12 @@ export class ProductListComponent implements OnInit{
 	products: IProduct[];
 	errorMessage: string;
 
-    constructor(private _privateService: ProductService) {
+    constructor(private _productService: ProductService) {
 
     }
 
     ngOnInit(): void {
-        this._privateService.getProducts()
+        this._productService.getProducts()
         	.subscribe(products => this.products = products,
         		error => this.errorMessage = <any>error);
     }
