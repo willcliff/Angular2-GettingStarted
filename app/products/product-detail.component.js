@@ -17,7 +17,7 @@ var ProductDetailComponent = (function () {
         this._route = _route;
         this._router = _router;
         this._productService = _productService;
-        this.pageTitle = "ProductDetail";
+        this.pageTitle = "Product Detail";
     }
     ProductDetailComponent.prototype.ngOnInit = function () {
         var _this = this;
